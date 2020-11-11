@@ -44,9 +44,9 @@ def checkout(cart, coupons)
   #
   # BEFORE it begins the work of calculating the total (or else you might have
   # some irritated customers
-  checkout = consolidate_cart( cart )
-  checkout = apply_coupons( checkout, coupons )
-  checkout = apply_clearance( checkout )
+  checkout = consolidate_cart(cart)
+  checkout = apply_coupons(checkout,coupons)
+  checkout = apply_clearance(checkout)
 
   price_total = 0
   checkout.each do |items|
