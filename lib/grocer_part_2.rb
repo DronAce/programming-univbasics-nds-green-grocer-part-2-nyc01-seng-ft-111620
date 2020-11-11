@@ -31,7 +31,7 @@ def apply_coupons(cart, coupons)
   #       cart_with_coupons << hash_cart
   #       binding.pry
   #     end
-  # 
+  #
   #   end
   # end
   # cart_with_coupons
@@ -51,7 +51,7 @@ def apply_coupons(cart, coupons)
     coupons_index += 1
   end
   cart
-  
+
 end
 
 def apply_clearance(cart)
