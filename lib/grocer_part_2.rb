@@ -14,10 +14,9 @@ def apply_coupons(cart, coupons)
   #     counter = 0
   #     cost = coupon[:cost] / coupon[:num]
   #       while items[:item] == name && items[:count] / coupon[:num] >= 1 do
-  #         counter += 1
   #         hash_cart = items
   #         hash_cart[:item] = "#{name} W/COUPON"
-  #         hash_cart[:count] = coupon[:num] * counter
+  #         hash_cart[:count] = coupon[:num]
   #         hash_cart[:price] = cost
   #         cart_with_coupons << hash_cart
   #       end
