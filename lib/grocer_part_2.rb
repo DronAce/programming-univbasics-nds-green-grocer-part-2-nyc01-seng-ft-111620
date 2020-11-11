@@ -13,8 +13,7 @@ def apply_coupons(cart, coupons)
   #     quantity = items[:count]]
   #     counter = 0
   #     cost = coupon[:cost] / coupon[:num]
-  #     if items[:item] == name && quantity > coupon[:num]
-  #       while items[:item] == name && items[:count] >= coupon[:num] do
+  #       while items[:item] == name && items[:count] / coupon[:num] >= 1 do
   #         items[:count] -= coupon[:num]
   #         counter += 1
   #         hash_cart = items
@@ -23,15 +22,6 @@ def apply_coupons(cart, coupons)
   #         hash_cart[:price] = cost
   #         cart_with_coupons << hash_cart
   #       end
-  #       while quantity > coupon[:num] do
-  #         quantity = quantity - coupon[:num]
-  #       end
-  #       hash_cart = items
-  #       hash_cart[:count] = quantity
-  #       cart_with_coupons << hash_cart
-  #       binding.pry
-  #     end
-  #
   #   end
   # end
   # cart_with_coupons
