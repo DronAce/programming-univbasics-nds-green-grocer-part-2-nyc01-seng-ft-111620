@@ -11,7 +11,6 @@ def apply_coupons(cart, coupons)
     coupons.each do |coupon|
       name = coupon[:item]
       quantity = items[:count]
-      counter = 0
       cost = (coupon[:cost] / coupon[:num]).round(2)
       if items[:item] == name && items[:count] / coupon[:num] >= 1
         hash_cart = items
