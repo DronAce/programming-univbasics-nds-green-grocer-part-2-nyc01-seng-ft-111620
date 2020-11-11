@@ -16,7 +16,7 @@ def apply_coupons(cart, coupons)
                     :clearance => applicable_for_discount[:clearance],
                     :count => applicable_for_discount[:count] - ( applicable_for_discount[:count] % current_coupon[:num])})
 
-        # applicable_for_discount[:count] %= current_coupon[:num]
+        applicable_for_discount[:count] %= current_coupon[:num]
       end
     coupons_index += 1
   end
