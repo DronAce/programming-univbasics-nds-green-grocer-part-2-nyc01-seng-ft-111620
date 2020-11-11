@@ -10,7 +10,7 @@ def apply_coupons(cart, coupons)
   cart.each do |items|
     coupons.each do |coupon|
       name = coupon[:item]
-      quantity = items[:count]]
+      quantity = items[:count]
       counter = 0
       cost = (coupon[:cost] / coupon[:num]).round(2)
       while items[:item] == name && items[:count] / coupon[:num] >= 1 do
