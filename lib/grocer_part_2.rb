@@ -19,6 +19,9 @@ def apply_coupons(cart, coupons)
         hash_cart[:price] = cost
         cart_with_coupons << hash_cart
       elsif items[:item] == name && items[:count] % coupon[:num] >= 1
+        hash_cart = items
+        hash_cart[:count] = items[:count] % coupon[:num]
+        
       end
     end
   end
