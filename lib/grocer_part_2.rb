@@ -24,6 +24,8 @@ def apply_coupons(cart, coupons)
         cart_with_coupons << hash_cart
       end
     end
+    hash_cart = items
+    cart_with_coupons << hash_cart
   end
   cart_with_coupons
   # coupons_index = 0
