@@ -50,4 +50,5 @@ def checkout(cart, coupons)
 
   price_total = 0
 
+
 end
