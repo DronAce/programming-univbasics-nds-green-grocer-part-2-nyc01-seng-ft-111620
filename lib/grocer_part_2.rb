@@ -44,6 +44,7 @@ def checkout(cart, coupons)
   #
   # BEFORE it begins the work of calculating the total (or else you might have
   # some irritated customers
-  consolidate_cart(cart)
-  apply_coupons(cart, coupons)
+  c_cart = consolidate_cart(cart)
+  ap_cart = apply_coupons(c_cart, coupons)
+
 end
