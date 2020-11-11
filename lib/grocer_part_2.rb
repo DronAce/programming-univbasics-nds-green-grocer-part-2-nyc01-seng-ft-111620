@@ -24,6 +24,7 @@ def apply_coupons(cart, coupons)
         hash_cart = items
         cart_with_coupons << hash_cart
       end
+
     end
   end
   cart_with_coupons
